@@ -739,3 +739,11 @@ section {
   max-width: none !important;
   width: 100% !important;
 }
+/* Fix: prevent words from breaking into many lines */
+#resume .resume-item,
+#resume .resume-item * {
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  hyphens: none !important;
+}
+
