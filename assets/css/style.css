@@ -728,3 +728,14 @@ section {
   line-height: 1.6;
 }
 </style>
+
+/* Force full width on resume right column */
+#resume .col-lg-6 {
+  width: 50% !important;
+}
+
+#resume .col-lg-6 .resume-item,
+#resume .col-lg-6 .resume-item p {
+  max-width: none !important;
+  width: 100% !important;
+}
