@@ -752,5 +752,16 @@ section {
     padding-right: 24px !important;
   }
 }
+/* Align resume timeline in the RIGHT column */
+@media (min-width: 992px) {
+  #resume .row > .col-lg-6:last-child .resume-item {
+    padding-left: 20px !important;   /* default genelde daha fazla */
+    margin-left: 0 !important;
+  }
+
+  #resume .row > .col-lg-6:last-child .resume-item::before {
+    left: -9px !important;           /* daireyi çizgiye hizala */
+  }
+}
 
 
