@@ -746,4 +746,11 @@ section {
   overflow-wrap: normal !important;
   hyphens: none !important;
 }
+@media (min-width: 992px) {
+  #resume .col-lg-6 {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
+
 
