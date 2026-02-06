@@ -763,5 +763,10 @@ section {
     left: -9px !important;           /* daireyi çizgiye hizala */
   }
 }
+@media (min-width: 992px) {
+  #resume .row > .col-lg-6:last-child {
+    padding-left: 0 !important;
+  }
+}
 
 
