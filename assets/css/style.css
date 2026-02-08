@@ -936,6 +936,10 @@ a { color: var(--accent); }
   color: #fff !important;
   background: var(--accent) !important;
 }
+body.dark-theme .section-title h2 {
+  color: #f1f5f9 !important;
+  letter-spacing: 1px;
+}
 
 
 
