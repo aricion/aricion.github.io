@@ -808,5 +808,51 @@ section {
   color: #0563bb;
   margin-bottom: 15px;
 }
+/* =======================
+   THEME SYSTEM
+======================= */
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --card: #f5f5f5;
+  --accent: #0563bb;
+}
+
+body.dark-theme {
+  --bg: #0f172a;
+  --text: #e5e7eb;
+  --card: #1e293b;
+  --accent: #38bdf8;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.section-bg {
+  background: var(--card);
+}
+
+a {
+  color: var(--accent);
+}
+
+/* Toggle button */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 9999;
+}
+
 
 
