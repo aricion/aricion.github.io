@@ -853,6 +853,89 @@ a {
   font-size: 18px;
   z-index: 9999;
 }
+/* =======================
+   BETTER DARK MODE
+======================= */
+
+:root{
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f5f7fb;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #0563bb;
+  --shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+body.dark-theme{
+  --bg: #0b1220;           /* ana arka plan */
+  --surface: #0f1b2e;      /* kart/section yüzeyi */
+  --surface-2: #0c172a;    /* alternatif yüzey */
+  --text: #e5e7eb;         /* ana yazı */
+  --muted: #a7b0c0;        /* ikincil yazı */
+  --border: rgba(255,255,255,.08);
+  --accent: #60a5fa;       /* mavi ama yormayan */
+  --shadow: 0 10px 30px rgba(0,0,0,.45);
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+}
+
+p, li, span { color: var(--text); }
+.section-title p { color: var(--muted) !important; }
+
+a { color: var(--accent); }
+
+/* Section background (senin section-bg kullandıkların) */
+.section-bg{
+  background: var(--surface-2) !important;
+}
+
+/* H2 başlıkların soluk görünmesini düzelt */
+.section-title h2{
+  color: var(--text) !important;
+  opacity: 1 !important;
+}
+
+/* ICON BOX (Hobbies gibi kutular) */
+.icon-box{
+  background: var(--surface) !important;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.icon-box h4{
+  color: var(--text) !important;
+}
+
+.icon-box p{
+  color: var(--muted) !important;
+}
+
+/* Icon rengi */
+.icon-box i{
+  color: var(--accent) !important;
+}
+
+/* Hover biraz canlı olsun */
+.icon-box:hover{
+  transform: translateY(-4px);
+  transition: .2s ease;
+  border-color: rgba(96,165,250,.45);
+}
+
+/* Navbar ikon/aktif renkler biraz toparlansın */
+.nav-menu a, .nav-menu a span{
+  color: var(--text) !important;
+}
+
+.nav-menu a:hover, .nav-menu .active, .nav-menu .active span{
+  color: #fff !important;
+  background: var(--accent) !important;
+}
 
 
 
